@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mario's Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <h1>Hi, I'm Mario👋</h1>
+        <p>I design and build <span style="color: #f39c12;">web projects</span> with creativity and precision.</p>
+        <!-- Arrow pointing to the next section -->
+        <div class="arrow">↓</div>
+    </div>
+
+    <!-- About Me section -->
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>I'm Mario, a passionate web developer with a love for creating sleek and efficient websites.</p>
+        <p>I enjoy working with modern technologies and always strive to deliver top-notch user experiences.</p>
+    </div>
+
+    <!-- Projects section with card layout -->
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>A cool web app that does something interesting.</p>
+        </div>
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>A website for a local business.</p>
+        </div>
+        <div class="project-card">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>A personal blog where I share my tech experiences.</p>
+        </div>
+    </div>
+
+    <!-- Contact section with a form -->
+    <div class="section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="mailto:mario@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <p>Download my CV: <a href="mario_cv.pdf" download>Download CV</a></p> 
+    </div>
+
+    <!-- Footer with GitHub and LinkedIn links -->
+    <div class="footer">
+        <p>Connect with me:</p>
+        <a href="https://github.com/your-github" target="_blank">
+            <img src="github_logo.svg" alt="GitHub Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">
+            <img src="linkedin_logo.svg" alt="LinkedIn Logo">
+        </a>
+    </div>
+
+</body>
+</html>
