@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -35,6 +40,10 @@ body {
 }
 
 .navbar a:hover {
+    color: #f39c12; /* Orange glow on hover */
+}
+
+a.active {
     color: #f39c12; /* Orange glow on hover */
 }
 
@@ -94,6 +103,12 @@ body {
     background: #2c2c2c;
 }
 
+
+#contact {
+    padding-bottom: 10px; /* Less padding at the bottom for the last section */
+}
+
+
 /* Project card styling */
 .project-card {
     display: inline-block; /* Display projects in a row */
@@ -129,6 +144,7 @@ body {
     justify-content: center;
     max-width: 400px; /* Limit form width */
     margin: 0 auto; /* Center the form */
+    padding: 0;
 }
 
 .contact-form label {
@@ -144,8 +160,10 @@ body {
     border: none;
     border-radius: 5px;
     padding: 10px; /* Padding inside input */
-    width: 100%; /* Full-width inputs */
-    margin: 10px auto;
+    width: 90%; /* Full-width inputs */
+    margin-bottom: 18px;
+    margin-top: 9px;
+    margin-left: auto;
 }
 
 .contact-form button {
@@ -179,14 +197,8 @@ body {
     transition: color 0.3s;
 }
 
+
+
 .footer a:hover {
     color: #f39c12; /* Orange glow on hover */
 }
-
-/* SVG icons styling */
-.footer img {
-    width: 24px; /* Size of icons */
-    height: 24px; 
-    vertical-align: middle; /* Align with text */
-}
-
