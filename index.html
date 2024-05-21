@@ -23,37 +23,56 @@
     </div>
 
     <!-- About Me section -->
-    <div class="section" id="about">
+    <div class="section" id="about">        
         <h2>About Me</h2>
         <p>I'm Mario, a passionate web developer with a love for creating sleek and efficient websites.</p>
         <p>I enjoy working with modern technologies and always strive to deliver top-notch user experiences.</p>
+        
+        <!-- Technologies section -->
+        <div class="technologies">
+            <h3>Technologies I've used:</h3>
+            <div class="tech-logos">
+                <div class="tech-logo"><img src="images/html.png" alt="HTML"></div>
+                <div class="tech-logo"><img src="images/css.png" alt="CSS"></div>
+                <div class="tech-logo"><img src="images/js.png" alt="JavaScript"></div>
+                <div class="tech-logo"><img src="images/react.png" alt="React"></div>
+                <div class="tech-logo"><img src="images/node.png" alt="Node.js"></div>
+                <!-- Add more logos as needed -->
+            </div>
+        </div>
+        <p><em>(Just to name a few)</em></p>
     </div>
+
 
     <!-- Projects section with card layout -->
     <div class="section" id="projects">
         <h2>Projects</h2>
         <div class="project-card">
-            <img src="project1.jpg" alt="Project 1">
+            <img src="images/project-1.png" alt="Project 1">
             <h3>Project 1</h3>
-            <p>A cool web app that does something interesting.</p>
+            <p>A car showcase website built in <strong>Next.js</strong> and <strong>TailwindCSS</strong></p>
         </div>
         <div class="project-card">
-            <img src="project2.jpg" alt="Project 2">
+            <img src="images/project-2.png" alt="Project 2">
             <h3>Project 2</h3>
-            <p>A website for a local business.</p>
+            <p>A small and simple ray tracing engine built in <strong>p5.js</strong></p>
         </div>
         <div class="project-card">
-            <img src="project3.jpg" alt="Project 3">
+            <img src="images/project-3.png" alt="Project 3">
             <h3>Project 3</h3>
-            <p>A personal blog where I share my tech experiences.</p>
+            <p>A multiplayer terminal-based game built in <strong>Python</strong></p>
         </div>
+        <p>Check out more on <a href="https://github.com/therealmudd" class="active" target="_blank">my GitHub</a> 👈</p>
     </div>
 
     <!-- Contact section with a form -->
     <div class="section" id="contact">
         <h2>Contact Me</h2>
-        <div class="contact-form">
-            <form action="mailto:m.antonio0294@gmail.com" method="post" enctype="text/plain">
+        <div class="contact-form-container">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="7e6955b1-767f-449c-85b5-02338c3dc7d0">
+
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                 <label for="email">Email:</label>
@@ -63,7 +82,11 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
-        <p>Download <a href="mario_cv.pdf" class="active" download>my CV</a> 👈</p> 
+
+        <div id="form-message"></div>
+        <div class="spinner" id="spinner"></div>
+        
+        <p>Download <a href="Mario_Antonio_CV.pdf" class="active" download target="_blank">my CV</a> 👈</p> 
     </div>
 
     <!-- Footer with GitHub and LinkedIn links -->
@@ -80,6 +103,8 @@
             </a>
         </div>
     </div>
+
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
 
     <script src="script.js"></script>
 </body>
